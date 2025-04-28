@@ -14,7 +14,7 @@ spec:
         app: team-two-webapp
     spec:
       containers:
-        - image: "sinhaya/mks"
+        - image: "ghcr.io/la-cc/simple-webapp:1.0.1"
           name: team-two-webapp
           env:
             - name: APP_COLOR
