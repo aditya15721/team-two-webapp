@@ -14,11 +14,11 @@ spec:
         app: team-two-webapp
     spec:
       containers:
-        - image: "nginx"
+        - image: "ghcr.io/la-cc/simple-webapp:1.0.1"
           name: team-two-webapp
-          # env:
-          #   - name: APP_COLOR
-          #     value: "green"
+          env:
+            - name: APP_COLOR
+              value: "green"
           resources:
             requests:
               memory: "64Mi"
@@ -27,7 +27,7 @@ spec:
               memory: "512Mi"
               cpu: "500m"
           ports:
-            - containerPort: 80
+            - containerPort: 8080
       securityContext:
         runAsUser: 1000
       dnsPolicy: ClusterFirst
