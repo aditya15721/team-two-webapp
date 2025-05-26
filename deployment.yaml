@@ -14,7 +14,7 @@ spec:
         app: team-two-webapp
     spec:
       containers:
-        - image: "nginx:lates"
+        - image: "nginx:latest"
           name: team-two-webapp
           # env:
           #   - name: APP_COLOR
