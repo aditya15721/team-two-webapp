@@ -18,7 +18,7 @@ spec:
           name: team-two-webapp
           env:
             - name: APP_COLOR
-              value: "two"
+              value: "green"
           resources:
             requests:
               memory: "64Mi"
